@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="all__wrapper">
+      <div class="form__wrapper">
+        <form id="form">
+          <div class="input__wrapper">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Item name" />
+          </div>
+          <div class="input__wrapper">
+            <label for="amount">Amount</label>
+            <input
+              type="number"
+              name="amount"
+              id="amount"
+              placeholder="Amout"
+            />
+          </div>
+          <button type="submit">Add Item</button>
+        </form>
+      </div>
+      <div class="subtotal__container__wrapper">
+        <div class="subtotal__container">
+         <div class="expense__header">
+          <h1>Your Expenses</h1>
+          <button type="button" class="clear__all" id="clearAll">Clear All</button>
+         </div>
+          <div class="expences__lists"></div>
+          <div class="subtotal__box">
+            <h4>Subtotal</h4>
+            <p class="subtotal__amout">
+              <span>₹</span> <span class="subtotalmoney" id="subtotalmoney">0</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
